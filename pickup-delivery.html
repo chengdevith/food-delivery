@@ -19,18 +19,34 @@
       .local-text {
         font-size: 1.25rem;
       }
+      .form-control::placeholder {
+        color: #b1a7a7;
+        opacity: 1;
+      }
+      .order-text:hover {
+        background-color: rgb(235, 243, 243);
+        color: black;
+      }
+
+      /* Add hover effect */
+      .card-hover-effect:hover {
+        transform: scale(1.05); /* Slightly enlarges the card */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+      }
+
       @media (max-width: 576px) {
         .nav-to {
           font-size: 0.5rem;
         }
         .local-text {
+          margin-top: 1rem;
           font-size: 0.7rem;
         }
-        .text-delivery{
-            font-size: 0.5rem;
+        .text-delivery {
+          font-size: 0.5rem;
         }
-        .text-delivery-burger{
-            font-size: 1rem;
+        .text-delivery-burger {
+          font-size: 1rem;
         }
       }
     </style>
@@ -155,7 +171,9 @@
       <section class="container mt-4">
         <div class="row">
           <!-- Image Section -->
-          <div class="d-flex justify-content-center col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
+          <div
+            class="d-flex justify-content-center col-12 col-md-4 col-lg-3 mb-3 mb-md-0"
+          >
             <div
               class="rounded-4 overflow-hidden"
               style="max-width: 150px; max-height: 150px"
@@ -174,7 +192,9 @@
               <p class="d-block text-muted mb-1" style="word-spacing: 0.5rem">
                 Burgers . Fast Food . Beverages . Western . Snacks
               </p>
-              <h2 class="fw-bold h1 mb-3 text-delivery-burger">Burger King Value Combo (TK)</h2>
+              <h2 class="fw-bold h1 mb-3 text-delivery-burger">
+                Burger King Value Combo (TK)
+              </h2>
               <span class="border border-black-subtle rounded-4 px-2 py-1 me-2">
                 <i class="fa-regular fa-sun me-2"></i>Top restaurant
               </span>
@@ -202,6 +222,389 @@
                 <i class="fw-bold me-2 fa-solid fa-circle-info"></i>More info
               </span>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- search in menu section -->
+      <section
+        class="bg-light shadow-lg border border-black-subtle my-4 sticky-top"
+        style="top: 10rem"
+      >
+        <div class="container py-3">
+          <div
+            class="row justify-content-center align-items-center text-center flex-sm-row"
+          >
+            <!-- Search Form -->
+            <div class="col-auto mb-3 mb-sm-0">
+              <form class="" role="search">
+                <div
+                  style="position: relative; display: inline-block; width: 100%"
+                >
+                  <input
+                    class="form-control rounded-5"
+                    type="search"
+                    placeholder="Search in menu"
+                    aria-label="Search"
+                    style="padding-left: 30px; min-width: 200px"
+                  />
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="
+                      position: absolute;
+                      top: 50%;
+                      left: 10px;
+                      transform: translateY(-50%);
+                      color: #ccc;
+                    "
+                  ></i>
+                </div>
+              </form>
+            </div>
+
+            <!-- Links -->
+            <div class="col-auto">
+              <!-- Dropdown for small screens -->
+              <div class="d-sm-none">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Menu
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Order food (21)</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Order Rice and Noodle (3)</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Noodle (4)</a></li>
+                  <li><a class="dropdown-item" href="#">Beverages (7)</a></li>
+                </ul>
+              </div>
+
+              <!-- Inline links for larger screens -->
+              <div class="d-none d-sm-flex flex-wrap justify-content-center">
+                <div class="me-3">
+                  <a style="text-decoration: none; color: #b1a7a7" href="#"
+                    ><span class="order-text p-3">Order food (21)</span></a
+                  >
+                </div>
+                <div class="me-3">
+                  <a style="text-decoration: none; color: #b1a7a7" href="#"
+                    ><span class="order-text p-3"
+                      >Order Rice and Noodle (3)</span
+                    ></a
+                  >
+                </div>
+                <div class="me-3">
+                  <a style="text-decoration: none; color: #b1a7a7" href="#"
+                    ><span class="order-text p-3">Noodle (4)</span></a
+                  >
+                </div>
+                <div class="me-3">
+                  <a style="text-decoration: none; color: #b1a7a7" href="#"
+                    ><span class="order-text p-3">Beverages (7)</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- order food section -->
+      <section class="container mt-5">
+        <div class="row">
+          <div class="col-9">
+            <h3>Order Food</h3>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 card-hover-effect"
+                  style="
+                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  "
+                >
+                  <div class="row g-0">
+                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                      <img
+                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                        class="img-fluid rounded-start"
+                        alt="Hot Pot"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">Hot Pot</h5>
+                        <p class="card-text">$8</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Qui, ea.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 card-hover-effect"
+                  style="
+                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  "
+                >
+                  <div class="row g-0">
+                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                      <img
+                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                        class="img-fluid rounded-start"
+                        alt="Hot Pot"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">Hot Pot</h5>
+                        <p class="card-text">$8</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Qui, ea.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 card-hover-effect"
+                  style="
+                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  "
+                >
+                  <div class="row g-0">
+                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                      <img
+                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                        class="img-fluid rounded-start"
+                        alt="Hot Pot"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">Hot Pot</h5>
+                        <p class="card-text">$8</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Qui, ea.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 card-hover-effect"
+                  style="
+                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  "
+                >
+                  <div class="row g-0">
+                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                      <img
+                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                        class="img-fluid rounded-start"
+                        alt="Hot Pot"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">Hot Pot</h5>
+                        <p class="card-text">$8</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Qui, ea.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 card-hover-effect"
+                  style="
+                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  "
+                >
+                  <div class="row g-0">
+                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                      <img
+                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                        class="img-fluid rounded-start"
+                        alt="Hot Pot"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">Hot Pot</h5>
+                        <p class="card-text">$8</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Qui, ea.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 card-hover-effect"
+                  style="
+                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  "
+                >
+                  <div class="row g-0">
+                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                      <img
+                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                        class="img-fluid rounded-start"
+                        alt="Hot Pot"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">Hot Pot</h5>
+                        <p class="card-text">$8</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Qui, ea.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 card-hover-effect"
+                  style="
+                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  "
+                >
+                  <div class="row g-0">
+                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                      <img
+                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                        class="img-fluid rounded-start"
+                        alt="Hot Pot"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">Hot Pot</h5>
+                        <p class="card-text">$8</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Qui, ea.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 card-hover-effect"
+                  style="
+                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  "
+                >
+                  <div class="row g-0">
+                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                      <img
+                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                        class="img-fluid rounded-start"
+                        alt="Hot Pot"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">Hot Pot</h5>
+                        <p class="card-text">$8</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Qui, ea.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 card-hover-effect"
+                  style="
+                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  "
+                >
+                  <div class="row g-0">
+                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                      <img
+                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                        class="img-fluid rounded-start"
+                        alt="Hot Pot"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title">Hot Pot</h5>
+                        <p class="card-text">$8</p>
+                        <p class="card-text">
+                          <small class="text-body-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Qui, ea.
+                          </small>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <h3></h3>
           </div>
         </div>
       </section>
