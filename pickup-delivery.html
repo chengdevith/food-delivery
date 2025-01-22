@@ -16,6 +16,15 @@
 
     <title>Food Delivery</title>
     <style>
+      .nav-link {
+        /* background-color: transparent ; */
+        color: #b1a7a7 !important;
+        padding: 16px !important;
+      }
+      .active {
+        background-color: rgb(235, 243, 243) !important;
+        color: black !important;
+      }
       .local-text {
         font-size: 1.25rem;
       }
@@ -230,11 +239,9 @@
         class="bg-light shadow-lg border border-black-subtle my-4 sticky-top"
         style="top: 0"
       >
-        <div class="container py-4">
-          <div
-            class="row justify-content-center align-items-center text-center flex-sm-row"
-          >
-            <!-- Search Form -->
+        <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+          <div class="container justify-content-center">
+            <!-- search form -->
             <div class="col-auto mb-sm-0">
               <form class="" role="search">
                 <div style="position: relative; display: block; width: 100%">
@@ -258,1550 +265,1162 @@
                 </div>
               </form>
             </div>
-
-            <!-- Links -->
-            <div class="col-auto">
-              <!-- Dropdown for small screens -->
-              <div class="d-sm-none">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1"
+                  >Order Food (21)</a
                 >
-                  Menu
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Order food (21)</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Order Rice and Noodle (3)</a
-                    >
-                  </li>
-                  <li><a class="dropdown-item" href="#">Noodle (4)</a></li>
-                  <li><a class="dropdown-item" href="#">Beverages (7)</a></li>
-                </ul>
-              </div>
-
-              <!-- Inline links for larger screens -->
-              <div class="d-none d-sm-flex flex-wrap justify-content-center">
-                <div class="me-3">
-                  <a style="text-decoration: none; color: #b1a7a7" href="#"
-                    ><span class="order-text p-3">Order food (21)</span></a
-                  >
-                </div>
-                <div class="me-3">
-                  <a style="text-decoration: none; color: #b1a7a7" href="#"
-                    ><span class="order-text p-3"
-                      >Order Rice and Noodle (3)</span
-                    ></a
-                  >
-                </div>
-                <div class="me-3">
-                  <a style="text-decoration: none; color: #b1a7a7" href="#"
-                    ><span class="order-text p-3">Noodle (4)</span></a
-                  >
-                </div>
-                <div class="me-3">
-                  <a style="text-decoration: none; color: #b1a7a7" href="#"
-                    ><span class="order-text p-3">Beverages (7)</span></a
-                  >
-                </div>
-              </div>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2"
+                  >Order Rice and Noodle (3)</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">Noodle (4)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4">Beverages (7)</a>
+              </li>
+            </ul>
           </div>
-        </div>
+        </nav>
       </section>
       <!-- order food section -->
       <section class="container mt-5 relative">
         <div class="row">
           <div class="col-9">
-            <h3>Order Food</h3>
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
+            <div
+              class=""
+              data-bs-spy="scroll"
+              data-bs-target="#navbar-example2"
+              data-bs-offset="0"
+              class="scrollspy-example"
+              tabindex="0"
+            >
+              <h3 id="scrollspyHeading1">Order Food</h3>
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
+              <h3 id="scrollspyHeading2">Order Rice and Noodle</h3>
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
+              <h3 id="scrollspyHeading3">Noodle</h3>
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+              <h3 id="scrollspyHeading4">Beverages</h3>
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div
+                    class="card mb-3 card-hover-effect"
+                    style="
+                      max-width: 648px; /* Increased by 20% (540px * 1.2) */
+                      transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    "
+                  >
+                    <div class="row g-0">
+                      <div class="col-md-6 py-5 px-2" style="overflow: hidden">
+                        <img
+                          src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
+                          class="img-fluid rounded-start"
+                          alt="Hot Pot"
+                        />
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://s.lightorangebean.com/media/20240914145836/Vegan-Chinese-Hot-Pot_done.png"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/2.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://ik.imagekit.io/awwybhhmo/satellite_images/chinese/beyondmenu/hero/16.jpg?tr=w-3840,q-50"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://images.prismic.io/facility-websites/Zk54zCol0Zci9Xxb_chinese_food.png?auto=format%2Ccompress&rect=0%2C28%2C1792%2C968&w=1000&h=540"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://media.cnn.com/api/v1/images/stellar/prod/220921081550-05-chinese-foods-mapo-tofu.jpg?c=original"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/general-tso-chicken.jpg?quality=82&strip=1"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div
-                  class="card mb-3 card-hover-effect"
-                  style="
-                    max-width: 648px; /* Increased by 20% (540px * 1.2) */
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                  "
-                >
-                  <div class="row g-0">
-                    <div class="col-md-6 py-5 px-2" style="overflow: hidden">
-                      <img
-                        src="https://www.levels.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChineseFood.702e2120.jpg&w=3840&q=75"
-                        class="img-fluid rounded-start"
-                        alt="Hot Pot"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card-body">
-                        <h5 class="card-title">Hot Pot</h5>
-                        <p class="card-text">$8</p>
-                        <p class="card-text">
-                          <small class="text-body-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui, ea.
-                          </small>
-                        </p>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Hot Pot</h5>
+                          <p class="card-text">$8</p>
+                          <p class="card-text">
+                            <small class="text-body-secondary">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Qui, ea.
+                            </small>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1859,7 +1478,6 @@
         </div>
       </section>
     </main>
-
     <!-- footer -->
     <footer class="my-4 border-top">
       <div
@@ -1919,5 +1537,11 @@
       src="https://kit.fontawesome.com/8fdf08cf82.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]');
+      firstScrollSpyEl.addEventListener("activate.bs.scrollspy", function () {
+        // do something...
+      });
+    </script>
   </body>
 </html>
